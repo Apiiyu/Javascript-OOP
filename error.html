@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP | Error</title>
+</head>
+
+<body>
+    <script>
+        // ---> Practice Create Error
+        // You can see documentation Error Javascript in https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error?retiredLocale=id
+        class Calculator {
+            static add(...numbers) { 
+                let value = 0
+
+                if (numbers.length === 0) {
+                    throw new Error('Please provide at least one number') // This way to create error
+                }
+
+                for (const number of numbers) {
+                    value += number
+                }
+
+                return value
+            }
+
+            static subtract(a, b) {
+                return a - bx
+            }
+        }
+
+        console.info(Calculator)
+        console.info(Calculator.add(1, 2, 5)) 
+    </script>
+</body>
+
+</html>

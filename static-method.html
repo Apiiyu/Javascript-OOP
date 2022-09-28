@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP | Static Method</title>
+</head>
+<body>
+    <script>
+        // ---> Practice Static Method
+        class Calculator {
+            static add(...numbers) { // This way to create static method
+                let value = 0
+
+                for(const number of numbers) {
+                    value += number
+                }
+
+                return value
+            }
+
+            static subtract(a, b) {
+                return a - bx
+            }
+        }
+
+        console.info(Calculator)
+
+        console.info(Calculator.add(1, 2, 5)) // This way to access static method
+    </script>
+</body>
+</html>

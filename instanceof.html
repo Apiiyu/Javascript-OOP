@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP | Instance Of</title>
+</head>
+<body>
+    <script>
+        // Practice Instance Of
+        class Person {
+            constructor(name){
+                this.name = name
+            }
+        }
+
+        class Student extends Person {
+            constructor(name, school){
+                super(name)
+                this.school = school
+            }
+        }
+
+        const budi = new Person('Budi')
+        const rafi = new Student('Rafi', 'SMK Telkom Purwokerto')
+        console.info(rafi instanceof Person) // Instance Of used to check if an object is an instance of a class
+        console.info(budi instanceof Student)
+    </script>
+</body>
+</html>

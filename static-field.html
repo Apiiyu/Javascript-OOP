@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP | Static Field</title>
+</head>
+<body>
+    <script>
+        // Practice Static Field
+        class Configuration { 
+            static database_host = 'localhost' // This way to create static fieldd
+            static database_port = 3306
+            static database_name = 'oop'
+        }
+
+        Configuration.database_port = 3307 // We can change value static field
+
+        console.log(Configuration.database_host) // This way to access static field
+        console.log(Configuration.database_port)
+        console.log(Configuration.database_name)
+    </script>
+</body>
+</html>

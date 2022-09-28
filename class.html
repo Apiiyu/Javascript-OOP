@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP | Class</title>
+</head>
+<body>
+    <script>
+        // ---> Practice Class Javascript 
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            // ---> This is better way to declare method/function in class
+            sayHello(name){ // ---> Because this method/function will be store in prototype
+                console.info(`Hello, my name is ${this.name}.`);
+            }
+        }
+
+        var p1 = new Person('John', 30);
+        console.info(p1);
+
+        p1.sayHello() // --> Run method/function in constructor function(Class)
+    </script>
+</body>
+</html>

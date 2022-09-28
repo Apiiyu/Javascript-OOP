@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP | Prototype</title>
+</head>
+<body>
+    <script>
+        // ---> Practice Prototype in EcmaScript 6
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+            this.sayHello = function() {
+                console.info(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+            }
+        }
+
+        Person.prototype.sayGoodbye = function () { // ---> Create method/function in prototype
+            console.info(`Goodbye, my name is ${this.name}.`);
+        }
+
+        var p1 = new Person('John', 30);
+        var p2 = new Person('Mary', 25);
+
+        console.log(p1);
+        console.log(p2);
+
+        p1.sayGoodbye() // ---> Run method/function in prototype
+    </script>
+</body>
+</html>

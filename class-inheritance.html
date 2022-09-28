@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP | Class Inheritance</title>
+</head>
+<body>
+    <script>
+        // ---> Practice Inheritance in EcmaScript 6
+        class Employee {
+            constructor(){
+                this.name = 'John'
+            }
+
+            sayHello(name){
+                console.info(`Hello ${name}, my name is employee ${this.name}.`)
+            }
+        }
+
+        class Manager extends Employee {
+            sayHello(name){
+                console.info(`Hello ${name}. My name is manager ${this.name}.`)
+            }
+        }
+
+        const rafi = new Employee()
+        rafi.name = 'Rafi'
+        rafi.sayHello('Reka')
+
+        const reka = new Manager()
+        reka.name = 'Reka'
+        reka.sayHello('Rafi')
+
+        console.info(rafi)
+        console.info(reka)
+    </script>
+</body>
+</html>
